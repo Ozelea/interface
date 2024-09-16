@@ -1,7 +1,5 @@
 // eslint-disable-next-line no-restricted-imports
-import {
-  APPSFLYER_API_KEY,
-  APPSFLYER_APP_ID,
+let APPSFLYER_API_KEY,APPSFLYER_APP_ID,
   DATADOG_CLIENT_TOKEN,
   DATADOG_PROJECT_ID,
   FIREBASE_APP_CHECK_DEBUG_TOKEN,
@@ -25,8 +23,7 @@ import {
   STATSIG_PROXY_URL,
   TRADING_API_KEY,
   UNISWAP_API_KEY,
-  WALLETCONNECT_PROJECT_ID,
-} from 'react-native-dotenv'
+  WALLETCONNECT_PROJECT_ID = "key"
 import { isNonJestDev } from 'utilities/src/environment/constants'
 
 export interface Config {
